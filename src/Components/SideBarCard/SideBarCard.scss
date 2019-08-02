@@ -1,0 +1,14 @@
+@import "../css/base.scss";
+
+.tb-big-avatar {
+  max-width: 150px;
+  margin: 0 auto $base-padding;
+}
+.tb-user-titles {
+  text-align: center;
+  margin-bottom: $base-padding * 2;
+}
+.side-bar-ico {
+  display: inline-block;
+  padding-right: 4px;
+}

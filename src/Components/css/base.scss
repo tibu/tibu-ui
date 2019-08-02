@@ -1,0 +1,50 @@
+@import "variables.scss";
+@import "mixins.scss";
+html,
+body {
+  min-height: 100%;
+}
+.full-height {
+  min-height: 100%;
+}
+$base-padding: $base-px * 2;
+.tb-margin-bottom-large {
+  margin-bottom: $base-padding * 3;
+  display: block;
+}
+.tb-margin-bottom-larger {
+  margin-bottom: $base-padding * 5;
+  display: block;
+}
+.tb-margin-bottom-medium {
+  margin-bottom: $base-padding * 2;
+  display: block;
+}
+.tb-margin-bottom-small {
+  margin-bottom: $base-padding !important;
+  display: block;
+}
+.tb-margin-bottom-nil {
+  margin-bottom: 0 !important;
+  display: block;
+}
+body {
+  background-color: $body-background-color;
+}
+.centered {
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 90%;
+}
+.main-body-header {
+  background: #fff;
+  padding: $base-padding * 2 0;
+}
+.ant-typography {
+  .ant-typography-edit-content {
+    padding: 0;
+  }
+}
+.clear {
+  clear: both;
+}

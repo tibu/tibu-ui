@@ -1,0 +1,21 @@
+@import "../css/base.scss";
+
+.tb-login-avatar {
+  width: 100%;
+  max-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: $base-padding;
+  margin-bottom: $base-padding;
+  border: 4px solid #6d6ded;
+}
+.tb-admins-card {
+  text-align: center;
+  .ant-card-body {
+    padding: $base-padding * 2;
+  }
+  .ant-radio-wrapper {
+    margin: 0;
+  }
+}

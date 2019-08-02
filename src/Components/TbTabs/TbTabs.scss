@@ -1,0 +1,16 @@
+@import "../css/base.scss";
+
+.tb_l_avatar_block {
+  float: right;
+  position: relative;
+  top: $base-padding / 2;
+  .tb_l_avatar {
+    display: inline-block;
+  }
+  .tb_l_avatar_block__text {
+    display: inline-block;
+    font-weight: bold;
+    color: #0000009e;
+    padding-left: $base-padding * 2;
+  }
+}

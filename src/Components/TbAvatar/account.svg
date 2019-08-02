@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="72.691476%" y1="93.093378%" x2="32.7608817%" y2="17.6655506%" id="linearGradient-1">
+            <stop stop-color="#6D6EED" offset="0%"></stop>
+            <stop stop-color="#898AE7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="200" height="200"></rect>
+        <g id="account" transform="translate(50.000000, 33.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M0,116.666667 L0,88.888889 C0.3041786,82.830508 3.9408268,77.439712 9.4444444,74.888889 L9.4444444,74.888889 C35.452897,64.4408294 64.491547,64.4408294 90.5,74.888889 L90.5,74.888889 C96.025241,77.424033 99.685401,82.817952 100,88.888889 L100,116.666667 C100,125.871412 92.538079,133.333333 83.333333,133.333333 L16.6666667,133.333333 C7.4619208,133.333333 0,125.871412 0,116.666667 Z M50,0 C34.6587569,0 22.2222222,12.4365347 22.2222222,27.7777778 C22.2222222,43.1190208 34.6587569,55.5555556 50,55.5555556 C65.341243,55.5555556 77.777778,43.1190208 77.777778,27.7777778 C77.777778,20.4106531 74.851199,13.3452666 69.641855,8.1359227 C64.432511,2.9265789 57.367125,0 50,0 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+@import "../css/base.scss";
+
+.logo {
+  padding: 0;
+  top: $base-padding;
+  display: inline-block;
+  position: relative;
+}
+.logo img {
+  display: inline-block;
+  width: 70px;
+  height: auto;
+}
+
+.logo span {
+  display: inline-block;
+  margin-left: 16px;
+  border-left: 1px solid #d0d0d0;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-bottom: 4px;
+  position: relative;
+  color: #6d6eed;
+}
