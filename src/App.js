@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Login />
+        {/* <Login /> */}
         <div className={"main-body-header"}>
           <div className={"centered"}>
             <TbHeader />
