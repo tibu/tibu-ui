@@ -13,7 +13,7 @@ import {
   TimePicker
 } from "antd";
 import moment from "moment";
-const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
+const { RangePicker } = DatePicker;
 const { Option } = Select;
 
 function onChange(time, timeString) {

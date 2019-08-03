@@ -4,8 +4,6 @@ import "./GeneralInfo.scss";
 
 const { Text } = Typography;
 function GeneralInfo(props) {
-  const { portalName = "Big Ben" } = props;
-
   return (
     <Descriptions>
       <Descriptions.Item label="First name">

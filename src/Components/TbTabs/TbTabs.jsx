@@ -16,6 +16,7 @@ import GeneralInfo from "../GeneralInfo";
 import TbTags from "../TbTags";
 import TbTimeline from "../TbTimeline";
 import Login from "../Login";
+import SignUp from "../SignUp";
 import {
   Tabs,
   Typography,
@@ -43,7 +44,8 @@ function TbTabs(props) {
       "Lists",
       "Managers",
       "Profile",
-      "Login"
+      "Login",
+      "Sign Up"
     ]
   } = props;
   const { TabPane } = Tabs;
@@ -539,6 +541,9 @@ function TbTabs(props) {
       </TabPane>
       <TabPane tab={tabMenu[7]} key="8">
         <Login />
+      </TabPane>
+      <TabPane tab={tabMenu[8]} key="9">
+        <SignUp />
       </TabPane>
     </Tabs>
   );
