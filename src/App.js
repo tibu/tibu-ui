@@ -15,9 +15,9 @@ import TbHeaderMobile from "./Components/TbHeaderMobile";
 import SideBarCard from "./Components/SideBarCard";
 import TbTabs from "./Components/TbTabs";
 import Login from "./Components/Login";
+import Footer from "./Components/Footer";
 import "./App.scss";
 
-const { Header, Footer, Sider, Content } = Layout;
 class App extends Component {
   render() {
     return (
@@ -48,6 +48,7 @@ class App extends Component {
             </Row>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

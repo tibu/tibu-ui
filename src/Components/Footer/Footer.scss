@@ -1,0 +1,13 @@
+@import "../css/base.scss";
+
+.tb-footer {
+  background: #6d6eed;
+  padding-top: $base-padding * 4;
+  strong {
+    color: #fff;
+  }
+  a {
+    display: block;
+    color: #fff;
+  }
+}

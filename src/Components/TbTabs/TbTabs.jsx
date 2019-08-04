@@ -37,14 +37,38 @@ import DrawerCreate from "../DrawerCreate/DrawerCreate";
 function TbTabs(props) {
   const {
     tabMenu = [
-      "Home",
-      "Job page",
-      "Jobs",
-      "Time log",
-      "Lists",
-      "Managers",
-      "Profile",
-      "Login",
+      <span>
+        <Icon type="home" />
+        Home
+      </span>,
+      <span>
+        <Icon type="carry-out" />
+        Job page
+      </span>,
+      <span>
+        <Icon type="carry-out" />
+        Jobs
+      </span>,
+      <span>
+        <Icon type="clock-circle" />
+        Time logs
+      </span>,
+      <span>
+        <Icon type="search" />
+        Search
+      </span>,
+      <span>
+        <Icon type="usergroup-add" />
+        Managers
+      </span>,
+      <span>
+        <Icon type="user" />
+        Profile
+      </span>,
+      <span>
+        <Icon type="key" />
+        Login
+      </span>,
       "Sign Up"
     ]
   } = props;
