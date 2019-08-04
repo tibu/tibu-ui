@@ -1,15 +1,25 @@
 import React from "react";
 import "./TbTimeTable.scss";
-import { Table, Divider, Tag } from "antd";
+import Modal from "../Modal";
+import { Table, Divider, Icon } from "antd";
 
 function TbTimeTable(props) {
   const {
     QuickLinks = [
       <a href="javascript:;">Approve</a>,
       <Divider type="vertical" />,
-      <a href="javascript:;" style={{ color: "#e34f70" }}>
-        Decline
-      </a>
+      <Modal
+        type="link"
+        buttonContent="Delete"
+        modalTitle={
+          <span>
+            <Icon type="close-circle" style={{ marginRight: "4px" }} /> Are you
+            sure you want to delete this task?
+          </span>
+        }
+      >
+        Delete
+      </Modal>
     ]
   } = props;
   const columns = [

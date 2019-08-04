@@ -268,19 +268,19 @@ function TbTabs(props) {
           style={{ marginTop: "0px" }}
         />
         <Row gutter={24}>
-          <Col sxs={24} sm={12} md={8} lg={8}>
+          <Col sxs={12} sm={12} md={8} lg={8}>
             <JobCard />
           </Col>
-          <Col xs={24} sm={12} md={8} lg={8}>
+          <Col xs={12} sm={12} md={8} lg={8}>
             <JobCard />
           </Col>
-          <Col xs={24} sm={12} md={8} lg={8}>
+          <Col xs={12} sm={12} md={8} lg={8}>
             <JobCard />
           </Col>
-          <Col xs={24} sm={12} md={8} lg={8}>
+          <Col xs={12} sm={12} md={8} lg={8}>
             <JobCard />
           </Col>
-          <Col xs={24} sm={12} md={8} lg={8}>
+          <Col xs={12} sm={12} md={8} lg={8}>
             <JobCard />
           </Col>
         </Row>
