@@ -29,12 +29,9 @@ function SideBarCard(props) {
       <Icon type="mail" className={"side-bar-ico"} />
       {email}
     </div>,
-    <Button
-      type="primary"
-      href={page}
-      style={{ width: "100%", marginTop: "16px" }}
-    >
-      {cardCta}
+
+    <Button type="primary" style={{ width: "100%", marginTop: "16px" }}>
+      <Link to={page}>{cardCta}</Link>
     </Button>
   ];
   return (
