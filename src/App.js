@@ -6,7 +6,7 @@ import ViewsTimelog from "./views/Timelog";
 import ViewsProfile from "./views/Profile";
 import ViewsJobs from "./views/Jobs";
 import ViewsJobsPage from "./views/JobsPage";
-import ViewsOrganizationPage from "./views/OrgsPage";
+import ViewsOrganizationPage from "./views/OrganizationPage";
 import ViewsTabs from "./views/Tabs";
 import TbHeader from "./Components/TbHeader";
 import TbHeaderMobile from "./Components/TbHeaderMobile";
