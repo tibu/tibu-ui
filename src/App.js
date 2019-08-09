@@ -1,55 +1,46 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import {
-  Button,
-  Row,
-  Menu,
-  Breadcrumb,
-  Col,
-  Layout,
-  Card,
-  Divider
-} from "antd";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Row, Col, Divider, Typography } from "antd";
+import ViewsHome from "./views/Home";
+import ViewsTimelog from "./views/Timelog";
+import ViewsProfile from "./views/Profile";
+import ViewsJobs from "./views/Jobs";
+import ViewsJobsPage from "./views/JobsPage";
+import ViewsTabs from "./views/Tabs";
 import TbHeader from "./Components/TbHeader";
 import TbHeaderMobile from "./Components/TbHeaderMobile";
-import SideBarCard from "./Components/SideBarCard";
-import TbTabs from "./Components/TbTabs";
-import Login from "./Components/Login";
-import Footer from "./Components/Footer";
 import "./App.scss";
 
+const { Title } = Typography;
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        {/* <Login /> */}
-        <div className={"main-body-header"}>
+      <Router>
+        <div>
+          <div className={"main-body-header"}>
+            <div className={"centered"}>
+              <TbHeader />
+            </div>
+          </div>
+          <Divider style={{ marginTop: "0px", marginBottom: "0px" }} />
           <div className={"centered"}>
-            <TbHeader />
+            <TbHeaderMobile />
           </div>
+          <Divider
+            className={"tb-margin-bottom-large"}
+            style={{ marginTop: "0px" }}
+          />
+
+          <Switch>
+            <Route path="/" exact component={ViewsHome} />
+            <Route path="/timelogs" exact component={ViewsTimelog} />
+            <Route path="/profile" exact component={ViewsProfile} />
+            <Route path="/jobs" exact component={ViewsJobs} />
+            <Route path="/jobs/:id" exact component={ViewsJobsPage} />
+            <Route path="/tabs" exact component={ViewsTabs} />
+          </Switch>
         </div>
-        <Divider style={{ marginTop: "0px", marginBottom: "0px" }} />
-        <div className={"centered"}>
-          <TbHeaderMobile />
-        </div>
-        <Divider
-          className={"tb-margin-bottom-large"}
-          style={{ marginTop: "0px" }}
-        />
-        <div className={"main-content"}>
-          <div className="centered">
-            <Row gutter={24}>
-              <Col xs={0} sm={0} md={0} lg={5}>
-                <SideBarCard />
-              </Col>
-              <Col xs={24} sm={24} md={24} lg={19}>
-                <TbTabs />
-              </Col>
-            </Row>
-          </div>
-        </div>
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }

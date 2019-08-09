@@ -11,7 +11,8 @@ function SideBarCard(props) {
     cardEntity = "Organization",
     languages = [" English,", " Dutch,", " Spanish"],
     location = " Amsterdam",
-    cardCta = "View profile",
+    cardCta = "Edit profile",
+    page = "/Profile.js",
     iconType = "user",
     url
   } = props;
@@ -30,14 +31,14 @@ function SideBarCard(props) {
     </div>,
     <Button
       type="primary"
-      href={"/Profile.js"}
+      href={page}
       style={{ width: "100%", marginTop: "16px" }}
     >
       {cardCta}
     </Button>
   ];
   return (
-    <Card style={{ width: "auto" }}>
+    <Card style={{ width: "auto" }} className={"tb-margin-bottom-large"}>
       <Avatar
         size={150}
         style={{

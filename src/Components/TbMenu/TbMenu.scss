@@ -1,0 +1,8 @@
+@import "../css/base.scss";
+
+.sidemenu.ant-menu {
+  background: none;
+  .ant-menu-submenu > .ant-menu {
+    background: none;
+  }
+}

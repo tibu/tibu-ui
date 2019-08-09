@@ -1,5 +1,6 @@
 import React from "react";
 import DefaultCover from "./tibusquare.png";
+import { Link } from "react-router-dom";
 import "./JobCard.scss";
 import {
   Row,
@@ -22,9 +23,11 @@ function JobCard(props) {
     jobTime = "16:30" + " - " + "18:30",
     orgName = "De Tamarinde",
     applyJob = (
-      <Button type="primary" style={{ marginTop: "16px" }}>
-        view job
-      </Button>
+      <Link to="jobs/1">
+        <Button type="primary" style={{ marginTop: "16px" }}>
+          view job
+        </Button>
+      </Link>
     ),
     url
   } = props;
