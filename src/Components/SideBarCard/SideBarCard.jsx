@@ -12,7 +12,7 @@ function SideBarCard(props) {
     languages = [" English,", " Dutch,", " Spanish"],
     location = " Amsterdam",
     cardCta = "Edit profile",
-    page = "/Profile.js",
+    page = "/Profile",
     iconType = "user",
     url
   } = props;

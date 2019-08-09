@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./TbAvatar.scss";
 import { Avatar, Button, Dropdown, Icon, Menu, Row, Col } from "antd";
 
@@ -12,10 +13,10 @@ function TbAvatar(props) {
   const menu = (
     <Menu>
       <Menu.Item key="0">
-        <a href="http://www.alipay.com/">View profile</a>
+        <a href="#">View profile</a>
       </Menu.Item>
       <Menu.Item key="1">
-        <a href="http://www.taobao.com/">Time</a>
+        <a href="#">Time</a>
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item key="3">Sign out</Menu.Item>
@@ -24,13 +25,15 @@ function TbAvatar(props) {
   return (
     <Row className={"tb_l_avatar_block"}>
       <Col xs={12} sm={12} md={12} lg={4} push={0}>
-        <Button type="link" to="/profile" style={{ padding: "0" }}>
-          <Avatar
-            className="tb_l_avatar"
-            style={{ backgroundColor: "#6D6EED" }}
-            icon="user"
-          />
-        </Button>
+        <Link to="/">
+          <Button type="link" to="/profile" style={{ padding: "0" }}>
+            <Avatar
+              className="tb_l_avatar"
+              style={{ backgroundColor: "#6D6EED" }}
+              icon="user"
+            />
+          </Button>
+        </Link>
       </Col>
       <Col xs={0} sm={0} md={0} lg={16} push={0}>
         {" "}
