@@ -6,7 +6,7 @@ import ViewsTimelog from "./views/Timelog";
 import ViewsProfile from "./views/Profile";
 import ViewsJobs from "./views/Jobs";
 import ViewsJobsPage from "./views/JobsPage";
-import ViewsOrgsPage from "./views/OrgsPage";
+import ViewsOrganizationPage from "./views/OrgsPage";
 import ViewsTabs from "./views/Tabs";
 import TbHeader from "./Components/TbHeader";
 import TbHeaderMobile from "./Components/TbHeaderMobile";
@@ -38,7 +38,11 @@ class App extends Component {
             <Route path="/profile" exact component={ViewsProfile} />
             <Route path="/jobs" exact component={ViewsJobs} />
             <Route path="/jobs/:id" exact component={ViewsJobsPage} />
-            <Route path="/organizations" exact component={ViewsOrgsPage} />
+            <Route
+              path="/organizations"
+              exact
+              component={ViewsOrganizationPage}
+            />
             <Route path="/tabs" exact component={ViewsTabs} />
           </Switch>
         </div>

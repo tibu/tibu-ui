@@ -96,7 +96,7 @@ const skillSet = [
   </Text>
 ];
 
-const OrgsPage = () => {
+const OrganizationPage = () => {
   return (
     <div className="App">
       <div className={"main-content"}>
@@ -211,4 +211,4 @@ const OrgsPage = () => {
   );
 };
 
-export default OrgsPage;
+export default OrganizationPage;
