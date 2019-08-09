@@ -99,7 +99,7 @@ const JobsPage = () => {
             <Col xs={0} sm={0} md={0} lg={5}>
               <SideBarCard
                 cardCta="Organization profile"
-                page="/organizations"
+                page={"/organizations"}
               />
               <Title level={4}>Menu</Title>
               <Divider />
