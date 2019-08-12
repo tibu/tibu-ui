@@ -25,15 +25,15 @@ function TbAvatar(props) {
   return (
     <Row className={"tb_l_avatar_block"}>
       <Col xs={12} sm={12} md={12} lg={4} push={0}>
-        <Link to="/">
-          <Button type="link" to="/profile" style={{ padding: "0" }}>
+        <Button type="link" to="/profile" style={{ padding: "0" }}>
+          <Link to="/">
             <Avatar
               className="tb_l_avatar"
               style={{ backgroundColor: "#6D6EED" }}
               icon="user"
             />
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </Col>
       <Col xs={0} sm={0} md={0} lg={16} push={0}>
         {" "}

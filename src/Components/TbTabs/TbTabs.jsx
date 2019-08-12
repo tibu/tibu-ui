@@ -310,7 +310,7 @@ function TbTabs(props) {
           <TabsCard cardHeader={"Time resgistration"} extraLink={false} />
         </TabPane>
         <TabPane tab={tabMenu[4]} key="5">
-          <TbLists />
+           <TbLists />
         </TabPane>
         <TabPane tab={tabMenu[5]} key="6">
           <Title level={3} className="tb-margin-bottom-medium">

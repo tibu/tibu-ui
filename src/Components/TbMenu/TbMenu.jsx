@@ -46,16 +46,28 @@ class TbMenu extends React.Component {
         >
           <Menu.ItemGroup>
             <Menu.Item key="setting:1">
-              <Icon type="book" />
-              Organizations
+              <Link to="/caregivers">
+                <Icon type="book" />
+                Organizations
+              </Link>
             </Menu.Item>
             <Menu.Item key="setting:2">
-              <Icon type="book" />
-              Locations
+              <Link to="/caregivers">
+                <Icon type="book" />
+                Locations
+              </Link>
             </Menu.Item>
             <Menu.Item key="setting:3">
-              <Icon type="book" />
-              Regions
+              <Link to="/caregivers">
+                <Icon type="book" />
+                Regions
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="setting:4">
+              <Link to="/caregivers">
+                <Icon type="book" />
+                Caregivers
+              </Link>
             </Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
