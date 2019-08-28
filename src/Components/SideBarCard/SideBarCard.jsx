@@ -11,7 +11,12 @@ function SideBarCard(props) {
     cardEntity = "Organization",
     languages = [" English,", " Dutch,", " Spanish"],
     location = " Amsterdam",
-    cardCta = "Edit profile",
+    cardCta = [
+      <Button style={{ width: "100%" }}>
+        <Link>View profile</Link>
+      </Button>
+    ],
+
     page = "/Profile",
     iconType = "user",
     url
@@ -28,11 +33,7 @@ function SideBarCard(props) {
     <div>
       <Icon type="mail" className={"side-bar-ico"} />
       {email}
-    </div>,
-
-    <Button type="primary" style={{ width: "100%", marginTop: "16px" }}>
-      <Link to={page}>{cardCta}</Link>
-    </Button>
+    </div>
   ];
   return (
     <Card style={{ width: "auto" }} className={"tb-margin-bottom-large"}>
@@ -62,6 +63,7 @@ function SideBarCard(props) {
       <List
         size="small"
         dataSource={data}
+        className={"tb-margin-bottom-medium"}
         renderItem={item => (
           <List.Item
             style={{
@@ -75,6 +77,7 @@ function SideBarCard(props) {
           </List.Item>
         )}
       />
+      {cardCta}
     </Card>
   );
 }

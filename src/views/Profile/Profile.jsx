@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TbHeader from "../../Components/TbHeader";
 import TbHeaderMobile from "../../Components/TbHeaderMobile";
 import SideBarCard from "../../Components/SideBarCard";
-import CoverPhoto from "../../Components/CoverPhoto";
+import DrawerBio from "../../Components/DrawerBio";
 import Description from "../../Components/Description";
 import DescriptionOrg from "../../Components/DescriptionOrg";
 import TimeRegistration from "../../Components/TimeRegistration";
@@ -29,7 +29,7 @@ const Profile = () => {
         <div className="centered">
           <Row gutter={24}>
             <Col xs={0} sm={0} md={0} lg={5}>
-              <SideBarCard />
+              <SideBarCard cardCta={<DrawerBio />} />
               <Title level={4}>Menu</Title>
               <Divider />
               <TbMenu />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TbHeader from "../../Components/TbHeader";
 import TbHeaderMobile from "../../Components/TbHeaderMobile";
 import SideBarCard from "../../Components/SideBarCard";
-import CoverPhoto from "../../Components/CoverPhoto";
+import DrawerBio from "../../Components/DrawerBio";
 import Description from "../../Components/Description";
 import DescriptionOrg from "../../Components/DescriptionOrg";
 import TimeRegistration from "../../Components/TimeRegistration";

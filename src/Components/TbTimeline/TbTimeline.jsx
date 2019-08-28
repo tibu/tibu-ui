@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline, Icon, Typography } from "antd";
+import EditBioInline from "../EditBioInline";
 import "./TbTimeline.scss";
 
 const { Text, Title } = Typography;
@@ -8,6 +9,19 @@ function TbTimeline(props) {
 
   return (
     <Timeline>
+      <Timeline.Item
+        dot={
+          <Icon
+            type="edit"
+            theme="twoTone"
+            twoToneColor="#6d6eed"
+            style={{ fontSize: "16px" }}
+          />
+        }
+      >
+        <Text strong>New Experience</Text>
+        <EditBioInline />
+      </Timeline.Item>
       <Timeline.Item
         dot={
           <Icon

@@ -1,6 +1,5 @@
 import React from "react";
 import { Tag } from "antd";
-import TbTagsAdd from "../TbTagsAdd";
 
 function log(e) {
   console.log(e);
@@ -33,9 +32,6 @@ function TbTags(props) {
       <Tag style={{ marginBottom: "8px" }} closable onClose={log}>
         Empathetic
       </Tag>
-      <div style={{ marginTop: "8px" }}>
-        <TbTagsAdd />
-      </div>
     </div>
   );
 }
