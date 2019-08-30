@@ -1,5 +1,6 @@
 import React from "react";
 import TbTagsAdd from "../TbTagsAdd";
+import UploadImageForm from "../UploadImageForm";
 import {
   Drawer,
   Form,
@@ -9,7 +10,8 @@ import {
   Input,
   Select,
   Icon,
-  Alert
+  Alert,
+  Divider
 } from "antd";
 
 const { Option } = Select;
@@ -59,25 +61,20 @@ class DrawerForm extends React.Component {
             <Form layout="vertical" hideRequiredMark>
               <Row gutter={16}>
                 <Col span={24}>
-                  <Form.Item label="Select organization">
-                    {getFieldDecorator("organization", {
-                      rules: [
-                        {
-                          required: true,
-                          message: "Please select an organization"
-                        }
-                      ]
-                    })(
-                      <Select placeholder="Please select Organization">
-                        <Option value="male">Stichting ons tweede thuis</Option>
-                        <Option value="female">Stichting de halve boom</Option>
-                        <Option value="other">Other</Option>
-                      </Select>
-                    )}
-                  </Form.Item>
+                  <div class="ant-col ant-form-item-label">
+                    <label
+                      for="email"
+                      class="ant-form-item-required"
+                      title="Email"
+                    >
+                      Upload new image
+                    </label>
+                  </div>
+                  <UploadImageForm />
+                  <Divider />
                 </Col>
                 <Col span={12}>
-                  <Form.Item label="Email">
+                  <Form.Item label="Email" style={{ marginBottom: "24px" }}>
                     {getFieldDecorator("email", {
                       rules: [
                         { required: true, message: "Please enter job title" }

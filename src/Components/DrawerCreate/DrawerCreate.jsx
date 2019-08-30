@@ -36,14 +36,20 @@ class DrawerForm extends React.Component {
 
   render() {
     const { getFieldDecorator } = this.props.form;
+    const {
+      buttonType = "secondary",
+      ico = <Icon type="plus" />,
+      buttonStyles = { display: "inline-block", marginLeft: "8px" },
+      buttonLabel = "New job"
+    } = this.props;
     return (
       <span>
         <Button
-          type="secondary"
+          type={buttonType}
           onClick={this.showDrawer}
-          style={{ display: "inline-block", marginLeft: "8px" }}
+          style={buttonStyles}
         >
-          <Icon type="plus" /> New job
+          {ico} {buttonLabel}
         </Button>
         <div>
           <Drawer

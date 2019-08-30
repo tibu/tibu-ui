@@ -11,13 +11,13 @@ function SideBarCard(props) {
     cardEntity = "Organization",
     languages = [" English,", " Dutch,", " Spanish"],
     location = " Amsterdam",
+    page = "./Profile",
+    ctaText = "View profile",
     cardCta = [
-      <Button style={{ width: "100%" }}>
-        <Link>View profile</Link>
+      <Button type="primary" style={{ width: "100%" }}>
+        <Link to={page}>{ctaText}</Link>
       </Button>
     ],
-
-    page = "/Profile",
     iconType = "user",
     url
   } = props;

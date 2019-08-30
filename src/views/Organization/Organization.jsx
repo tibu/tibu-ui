@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import TbHeader from "../../Components/TbHeader";
 import TbHeaderMobile from "../../Components/TbHeaderMobile";
 import SideBarCard from "../../Components/SideBarCard";
 import TbTabs from "../../Components/TbTabs";
 import Description from "../../Components/Description";
-import DraweCreate from "../../Components/DrawerCreate";
+import GeneralInfo from "../../Components/GeneralInfo";
 import TbTags from "../../Components/TbTags";
 import TbMenu from "../../Components/TbMenu";
 import JobCard from "../../Components/JobCard";
 import CoverPhoto from "../../Components/CoverPhoto";
 import JobsList from "../../Components/JobsList";
 import TableFilters from "../../Components/TableFilters";
+import DrawerCreate from "../../Components/DrawerCreate";
 import "../../App.scss";
 import {
   Tabs,
@@ -27,6 +29,7 @@ import {
   Card,
   Icon
 } from "antd";
+import DrawerAssign from "../../Components/DrawerAssign";
 
 const { Title, Text } = Typography;
 const { TabPane } = Tabs;
@@ -103,16 +106,7 @@ const OrganizationPage = () => {
         <div className="centered">
           <Row gutter={24}>
             <Col xs={0} sm={0} md={0} lg={5}>
-              <SideBarCard
-                cardCta={
-                  <DraweCreate
-                    buttonType="primary"
-                    ico={false}
-                    buttonStyles={{ width: "100%" }}
-                    buttonLabel="Create job"
-                  />
-                }
-              />
+              <SideBarCard cardCta={<DrawerAssign />} />
               <Title level={4}>Menu</Title>
               <Divider />
               <TbMenu />

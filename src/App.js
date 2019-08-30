@@ -15,6 +15,7 @@ import ViewsManagers from "./views/Managers";
 import ViewsJobsPage from "./views/JobsPage";
 import ViewsCaregivers from "./views/Caregivers";
 import ViewsOrganizationPage from "./views/OrganizationPage";
+import ViewsOrg from "./views/Organization";
 import ViewsTabs from "./views/Tabs";
 import TbHeader from "./Components/TbHeader";
 import TbHeaderMobile from "./Components/TbHeaderMobile";
@@ -60,6 +61,7 @@ class App extends Component {
             <Route path="/jobs" exact component={ViewsJobs} />
             <Route path="/caregivers" exact component={ViewsCaregivers} />
             <Route path="/managers" exact component={ViewsManagers} />
+            <Route path="/org" exact component={ViewsOrg} />
             <Route path="/jobs/:id" exact component={ViewsJobsPage} />
             <Route
               path="/organizations"
